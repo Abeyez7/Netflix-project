@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-color: rgba(0, 0, 0, 0.822);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 134px;
+    
+}
+
+
+svg {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.anker {
+    text-decoration: none;
+    font-family: "Netflix Sans", Helvetica, Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+    position: relative;
+    left: -46px;
+    top: 12px;
+    font-size: 18px;
+   
+    
+}
+
+.anker:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.342);
+    transition: all 0.5s;
+}
+
+h2 {
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 28px 0px 33px -3px;
+    font-family: "Netflix Sans", Helvetica, Arial, sans-serif;
+    color: red;
+    z-index: 10;
+    
+}
+
+
+
+.container {
+    
+    
+    border: 2px solid rgba(0, 0, 0, 0.822);;
+    padding-bottom: 36px;
+    padding-left: 64px;
+    padding-right: 64px;
+    max-width: 40%;
+    border-radius: 9px;
+    background:url(assets/images/5.png);
+    /* opacity: 0.5; */
+    background-color: black;
+}
+@media screen and (max-width:3700px) {
+    container{
+        background: black;
+    }
+}
+
+
+.form {
+    z-index: 10;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+input,
+textarea {
+    display: block;
+    padding: 12px 7px;
+
+    margin: 8px auto;
+    border: 1px solid;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 260px;
+    z-index: 10;
+}
+
+.checbox p{
+    display: inline-block;
+    flex-direction: row;
+    color:wheat;
+    z-index: 10;
+}
+
+@media screen and (max-width:390px) {
+
+    input,
+    textarea {
+        display: inline;
+        width: 73%;
+        margin: 3px auto;
+        z-index: 10;
+    }
+}
+
+
+.btn {
+
+    display: flex;
+    /* width: 34px; */
+    margin: auto;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    z-index: 10;
+    margin-top: 23px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(207, 36, 36);
+    border: 2px solid rgb(207, 36, 36);
+    transition: all 1s;
+    z-index: 10;
+}
