@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .item{
+        background-color: gray;
+        border: 2px solid black;
+        height: 85px;
+         width: 85px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         /* transform: rotate(45deg); */
+         /* transform: rotateX(45deg); */
+         /* transform: rotateY(45deg); */
+         /* transform: rotateZ(45deg); */
+         /* transform: scale(1.5); */
+         /* transform: scaleX(1.5); */
+         /* transform: scaleY(1.5); */
+         /* transform: scaleZ(1.5); */
+         /* transform: skew(5deg); */
+         /* transform: skewX(5deg); */
+         /* transform: skewY(5deg); */
+         /* transform: translate(100px) */
+         transform: translate(100%) skew(45deg) translate3d(56%);
+    }
+    .container{
+        height: 50vh;
+        width: 100vw;
+        border: 2px solid gray;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">
+            item
+        </div>
+    </div>
+</body>
+</html>
