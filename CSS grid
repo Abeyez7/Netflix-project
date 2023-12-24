@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display grid</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        display: grid;
+        /* grid-template-columns: 122px 100px;
+        grid-template-rows: 100px 100px 100px; */
+        grid-template-areas: "nav nav nav  "
+                            "content content side"
+        
+                        "footer footer footer";
+    
+           
+                    }
+    .box{
+        border: 2px solid red;
+        /* width: 52px; */
+        height: 52px;
+        display: flex;
+    }
+    .box1{
+      grid-area: nav ;
+    }
+    .box1 ul li a {
+      display: flex;
+      list-style: none;
+    }
+    .box2{
+     grid-area: content;
+     height: 100px;
+     
+
+    }
+    .box3{
+        height: 100px;
+        grid-area:side;
+        
+    }
+    .box4{
+        grid-area:footer;
+       
+      
+    }
+ 
+</style>
+<body>
+    <div class="container">
+        <div class= "box box1">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+        </div>
+        <div class= "box box2">box-2</div>
+        <div class= "box box3">box-3</div>
+        <div class= "box box4">box-4</div>
+       
+        
+    </div>
+</body>
+</html>
